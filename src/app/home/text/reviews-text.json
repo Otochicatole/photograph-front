@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "title": "Lara & Elías",
+      "category": "Wedding",
+      "year": 2017,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "Il servizio è stato eccellente!Fin dall'inizio, Manu si è dimostrata professionale, attenta, impegnata e presente nel catturare i momenti più belli del nostro matrimonio. I dettagli unici e spontanei. Ogni foto è speciale!La qualità delle foto è eccellente e ha superato le nostre aspettative.E soprattutto, il trattamento è stato impeccabile. Manu è stata sempre gentile, flessibile e attenta ad ascoltare le nostre idee.Super consigliata!!",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Florencia & Isaias",
+      "category": "Wedding",
+      "year": 2019,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "Manu è stata eccellente e attenta ai dettagli fin dal primo momento. Sia durante il nostro matrimonio civile che nella celebrazione, ci siamo affidati completamente al suo occhio, e il risultato è stato migliore di quanto ci aspettassimo. Ha catturato e consegnato materiale che rimarrà per sempre nei nostri ricordi di uno dei giorni più importanti della nostra vita.",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Melissa & Abel",
+      "category": "Wedding",
+      "year": 2020,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "Ciao! Siamo Meli e Abel, a marzo 2023 ci siamo sposati e, senza dubbio, la cosa più bella è stata poter immortalare quel giorno, rivivendo quei momenti ancora e ancora. Manu ha catturato esattamente ciò che desideravamo: sguardi, sorrisi e la naturalezza della cerimonia. Un lavoro eccellente e ricordi meravigliosi.",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Melani Beron",
+      "category": "Outdoor",
+      "year": 2021,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "Manu, ti ringrazio per l'incredibile lavoro che hai fatto nel catturare un momento così speciale della mia vita: la mia gravidanza della mia unica figlia. Le tue foto sono state meravigliose, piene di sensibilità e professionalità. Grazie al tuo talento, mio marito ed io abbiamo un ricordo inestimabile che custodiremo per sempre: l'immagine di nostra figlia quando era ancora nel mio pancione. Raccomando Manu senza alcun dubbio, perché riesce a trasformare momenti unici in ricordi eterni. Grazie di cuore!",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Sabrina Scoppetta",
+      "category": "XV",
+      "year": 2019,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "La fotografa Manu Maranzana è stata presente per catturare i momenti della mia festa di quindici anni, oltre ad avermi accompagnata nella creazione del mio book fotografico. In entrambi i lavori si è distinta, proponendo sempre idee molto dinamiche, creative e originali, sia per foto individuali che di gruppo. Ti fa sentire in un ambiente molto accogliente e si nota che è una persona estremamente dedicata al suo lavoro!",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Andrea Bozzo",
+      "category": "Session",
+      "year": 2018,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "Nostra esperienza con Manuela è stata eccellente... I miei figli si sono sentiti super a loro agio. La sua professionalità e dolcezza si sono riflesse nel lavoro, dato che non è sempre facile lavorare con bambini piccoli. Tuttavia, Manuela è riuscita a rendere ogni scatto, posa e location perfettamente in linea con ciò che stavamo cercando, ottenendo così un risultato eccellente.Grazie per il tuo lavoro impeccabile.",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Aymará Benítez",
+      "category": "XV",
+      "year": 2022,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "La mia esperienza è stata incredibile! Con la tua comprensione e la tua costante attenzione a tutto, soprattutto nell'aiutarmi con le pose e nel darmi fiducia, visto che non ho esperienza in questo campo e questa è stata la mia prima volta con una sessione fotografica. Sei stata paziente e gentile in un momento così speciale per me. Sei super consigliata per chiunque cerchi una fotografa gentile, attenta e comprensiva!.",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Micaela Santucho",
+      "category": "XV",
+      "year": 2016,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "Un'esperienza molto positiva! In ogni momento ci siamo sentiti super a nostro agio e soprattutto ci siamo divertiti, dato che era una sessione fotografica di quinceañera. In ogni scatto, guida la persona su come posare, così ti sentirai più sicuro. Oltre al risultato delle foto, che risultano sempre bellissime. Se vuoi divertirti e fare belle foto, lei è la fotografa giusta!",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Camila Patitton",
+      "category": "XV",
+      "year": 2020,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "La fotografa Manu Maranzana è stata presente per catturare i momenti della mia festa di quindici anni, oltre ad avermi accompagnata nella creazione del mio book fotografico. In entrambi i lavori si è distinta, proponendo sempre idee molto dinamiche, creative e originali, sia per foto individuali che di gruppo. Ti fa sentire in un ambiente molto accogliente e si nota che è una persona estremamente dedicata al suo lavoro!",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Victoria Ruesca",
+        "category": "XV Party",
+        "year": 2016,
+        "rating": "⭐⭐⭐⭐⭐",
+        "description": "È stata una bellissima esperienza, ricordiamo sempre con i miei genitori quel momento speciale. Sia la qualità che la preparazione di tutto sono state eccellenti ♥️ Un 10 su 10.",
+        "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+      },
+    {
+      "id": 11,
+      "title": "Carolina",
+      "category": "Session",
+      "year": 2017,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "La mia esperienza è stata meravigliosa. Fin dal primo momento mi sono sentita molto accolta e a mio agio. La sua gentilezza e professionalità hanno reso la sessione fotografica molto più rilassata di quanto mi aspettassi. Uno degli aspetti che ho apprezzato di più è stato il modo in cui hanno gestito il cambio d'abito. É stata estremamente gentili e pazienti, permettendomi di godermi il processo senza sentirmi sotto pressione. Inoltre, mi ha guidata con grande abilità nelle pose, il che è stato fondamentale, dato che non ho esperienza e non sapevo come posare. Grazie alla sua guida, sono riuscita a sentirmi più sicura e naturale davanti alla fotocamera. Il risultato finale è stato spettacolare. Senza dubbio, consiglio a chiunque cerchi una sessione fotografica con un tocco professionale e un ambiente accogliente di rivolgersi a loro.",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Agustina Delbianco",
+      "category": "Session",
+      "year": 2022,
+      "rating": "⭐⭐⭐⭐⭐",
+      "description": "Volevo condividere la mia esperienza con i servizi fotografici di Manu Maranza. La mia bambina stava per compiere un anno e Manu ha saputo esattamente come catturare delle foto meravigliose per conservare quel ricordo per sempre. La sua grande professionalità e la sua energia positiva ci hanno fatto sentire a nostro agio, permettendogli di cogliere ogni movimento della mia piccola. Il risultato ci è piaciuto tantissimo e anche i nostri familiari sono rimasti molto soddisfatti! I suoi servizi sono assolutamente consigliati.",
+      "image": "/FOTOGRAFIAS/CARROUSEL-GRIS/3.jpg"
+    }
+  ]
+  
