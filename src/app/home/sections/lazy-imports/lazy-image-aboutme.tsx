@@ -8,7 +8,7 @@ type Props = {
 };
 
 const LazyImage = memo(({ src, className, alt = "" }: Props) => (
-    <Image className={className} src={src} alt={alt} loading="lazy" />
+    <Image className={className} src={src} alt={alt} loading="lazy" width={400} height={400} />
 ));
 
 LazyImage.displayName = "LazyImage";

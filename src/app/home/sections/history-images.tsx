@@ -14,15 +14,15 @@ const images = [
         img: '/FOTOGRAFIAS/5-images/2.png',
     },
     {
-        name: 'Mirna e Brian',
+        name: 'Geru e Guille',
         img: '/FOTOGRAFIAS/5-images/3.png',
     },
     {
-        name: 'Meli e Abel',
+        name: 'Mirna e Brian',
         img: '/FOTOGRAFIAS/5-images/4.png',
     },
     {
-        name: 'Geru e Guille',
+        name: 'Meli e Abel',
         img: '/FOTOGRAFIAS/5-images/5.png',
     },
 ];
