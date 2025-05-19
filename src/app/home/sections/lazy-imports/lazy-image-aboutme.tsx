@@ -4,7 +4,7 @@ import Image from "next/image";
 type Props = {
     src: string;
     className?: string;
-    alt?: string; // Agregar alt para accesibilidad
+    alt?: string;
 };
 
 const LazyImage = memo(({ src, className, alt = "" }: Props) => (

@@ -7,6 +7,7 @@ import Footer from "../../components/layout/footer";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from 'next/image';
+import { IoIosArrowBack } from "react-icons/io";
 
 interface GalleryItem {
     name: string;
@@ -68,7 +69,15 @@ export default function Gallery() {
             </div>
             <div className="mt-[140px] w-full flex flex-col justify-center items-center">
                 <section className="flex flex-col w-full p-4 xl:w-[80%] items-center text-center">
+                <div className="flex flex-col gap-10 w-full lg:flex-row justify-between items-center mb-20">
+                    <Link href="/">
+                        <Button className="flex flex-row gap-3 items-center justify-center">
+                            <IoIosArrowBack/>Home
+                        </Button>
+                    </Link>
                     <h1 className="text-[96px] font-[Ovtreasure]">Galleria</h1>
+                    <div className="w-[150px]"/>
+                </div>
                     <p>Permettimi di introdurmi tra le storie che ho fotografato in questi dieci meravigliosi anni: matrimoni, <br /> bambini e feste che mi hanno permesso di ritrarre ogni emozione più bella:</p>
                     <p className="italic text-[#545454] mb-20 font-[LigthItalic] mt-6">l’amore e la felicità.</p>
                     {Object.entries(groupedData).map(([sectionType, items]) => (

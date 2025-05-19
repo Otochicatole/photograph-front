@@ -2,6 +2,12 @@ import {motion} from "framer-motion";
 import Image from "next/image";
 import cards from "../text/reviews-text.json";
 
+enum Category {
+    Wedding = "Wedding",
+    Session = "Session",
+    XV = "XV Party",
+}
+
 const Reviews = () => {
     const columns: {
         id: number;
@@ -18,6 +24,7 @@ const Reviews = () => {
     });
 
     return (
+        
         <>
             <p className="text-[20px] italic text-[#545454] font-[LigthItalic]  mt-6 text-center">
                 “Perché ogni storia d&apos;amore merita di <br/> essere ricordata per sempre”
@@ -41,9 +48,11 @@ const Reviews = () => {
                                 transition={{duration: 0.8, ease: "easeOut"}}
                                 className="flex flex-col p-4 rounded-lg bg-[#FFFDF5] border-2 border-[#CCB9AB] w-full lg:max-w-[400px] text-[#545454] gap-4"
                             >
+                                <div className="flex flex-row justify-between items-center">
                                 <h2 className="text-[26px] text-[Ovtreasure]">{title}</h2>
+                                <p className={`px-3 w-fit text-sm rounded-full ${category === Category.Wedding ? 'bg-[#DAD8C1]' : category === Category.XV ? 'bg-[#E5C8BE]' : 'bg-[#BCC5CE]'}`}>{category}</p>
+                                </div>
                                 <p className="text-[16px]">{description}</p>
-                                <p>{category}</p>
                                 {image &&
                                     <Image className="w-full rounded-lg hidden lg:block" loading="lazy" src={image}
                                            alt={title} width={400} height={300}/>}
