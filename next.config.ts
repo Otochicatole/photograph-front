@@ -9,7 +9,13 @@ const nextConfig: NextConfig = {
     STRAPI_TOKEN: process.env.STRAPI_TOKEN,
   },
   images: {
-    domains: ['localhost'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'admin.maranzana.photography',
+        pathname: '/uploads/**',
+      },
+    ],
   },
 };
 
