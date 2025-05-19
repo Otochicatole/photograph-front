@@ -15,6 +15,7 @@ interface GalleryItem {
 
 export default function Page() {
     const [data, setData] = useState<GalleryItem[] | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
     const params = useParams();
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [isNavFixed, setIsNavFixed] = useState(false);
@@ -47,8 +48,15 @@ export default function Page() {
     useEffect(() => {
         window.scrollTo(0, 0);
         (async () => {
-            const response = await getGalleryForName(encodeURIComponent(galleryName));
-            setData(response.gallery);
+            setIsLoading(true);
+            try {
+                const response = await getGalleryForName(encodeURIComponent(galleryName));
+                setData(response.gallery);
+            } catch (error) {
+                console.error("Error al cargar la galería:", error);
+            } finally {
+                setIsLoading(false);
+            }
         })();
     }, [galleryName]);
 
@@ -77,34 +85,42 @@ export default function Page() {
                     </h1>
                     <div className="w-[150px]"/>
                 </div>
-                <div
-                    className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-1 space-y-1 transition-all duration-500 ease-in-out">
-                    {data?.flatMap((item) =>
-                        item.images?.map((image, index) => (
-                            <div
-                                key={index}
-                                className={`break-inside-avoid overflow-hidden flex p-2 rounded-[16px] hover:bg-[#ffe3de] transition-all duration-300 ease-in-out`}
-                            >
-                                <Image
-                                    src={image}
-                                    alt={`Imagen ${index}`}
-                                    className="w-full h-full object-cover rounded-lg cursor-pointer"
-                                    onClick={() => setSelectedImage(image)}
-                                    width={500}
-                                    height={500}
-                                    loading="lazy"
-                                />
-                            </div>
-                        ))
-                    )}
-                </div>
+                
+                {isLoading ? (
+                    <div className="flex flex-col items-center justify-center w-full py-20">
+                        <div className="w-12 h-12 border-4 border-[#ffe3de] border-t-[#545454] rounded-full animate-spin"></div>
+                    </div>
+                ) : (
+                    <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-1 space-y-1 transition-all duration-500 ease-in-out">
+                        {data?.flatMap((item) =>
+                            item.images?.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className="break-inside-avoid overflow-hidden flex p-2 rounded-[16px] hover:bg-[#ffe3de] transition-all duration-300 ease-in-out"
+                                >
+                                    <Image
+                                        src={image}
+                                        alt={`Imagen ${index}`}
+                                        className="w-full h-full object-cover rounded-lg cursor-pointer"
+                                        onClick={() => setSelectedImage(image)}
+                                        width={500}
+                                        height={500}
+                                        loading="lazy"
+                                    />
+                                </div>
+                            ))
+                        )}
+                    </div>
+                )}
+                
                 {selectedImage && (
                     <div style={{zIndex: 99999}}
                          className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-2xl p-4 overflow-y-auto">
                         <div className="relative max-w-[95vw] max-h-[95vh] bg-[#cccccc] rounded-sm">
                             <button
-                                className="absolute top-2 right-5 text-white cursor-pointer rounded-full hover:text-red-700 text-6xl"
+                                className="absolute top-2 right-5 text-white cursor-pointer rounded-full hover:text-red-700 text-6xl z-[100000]"
                                 onClick={() => setSelectedImage(null)}
+                                style={{ position: 'fixed', top: '20px', right: '20px' }}
                             >
                                 &times;
                             </button>
@@ -127,7 +143,7 @@ export default function Page() {
                         scrollWithDelay(() => scrollToSection('contact'))
                     }} className="w-[163px] mt-10" variant="secondary">Inviare domanda</Button>
                     <p className="italic text-[#545454] mt-40 mb-40 font-[LigthItalic] text-center p-3">
-                        “Perché i momenti passano, ma le <br/> emozioni rimangono”
+                        &ldquo;Perché i momenti passano, ma le <br/> emozioni rimangono&rdquo;
                     </p>
                 </div>
             </div>
