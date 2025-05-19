@@ -59,9 +59,6 @@ export default function Page() {
         };
     }, [selectedImage]);
 
-    const heights = useMemo(() => ["h-[150px]", "h-[200px]", "h-[300px]", "h-[250px]", "h-[350px]", "h-[500px]"], []);
-    const getRandomHeight = (index: number) => heights[index % heights.length];
-
     return (
         <>
             <header ref={headerRef}/>
@@ -86,7 +83,7 @@ export default function Page() {
                         item.images?.map((image, index) => (
                             <div
                                 key={index}
-                                className={`break-inside-avoid overflow-hidden flex p-2 rounded-[16px] hover:bg-[#ffe3de] transition-all duration-300 ease-in-out ${getRandomHeight(index)}`}
+                                className={`break-inside-avoid overflow-hidden flex p-2 rounded-[16px] hover:bg-[#ffe3de] transition-all duration-300 ease-in-out`}
                             >
                                 <Image
                                     src={image}
@@ -104,7 +101,7 @@ export default function Page() {
                 {selectedImage && (
                     <div style={{zIndex: 99999}}
                          className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-2xl p-4 overflow-y-auto">
-                        <div className="relative flex w-auto max-w-[95vw] max-h-[95vh] p-1 bg-[#cccccc] rounded-sm">
+                        <div className="relative max-w-[95vw] max-h-[95vh] bg-[#cccccc] rounded-sm">
                             <button
                                 className="absolute top-2 right-5 text-white cursor-pointer rounded-full hover:text-red-700 text-6xl"
                                 onClick={() => setSelectedImage(null)}
@@ -114,7 +111,8 @@ export default function Page() {
                             <Image
                                 src={selectedImage}
                                 alt="Preview"
-                                className="max-w-full max-h-[90vh] object-contain rounded-sm"
+                                className="object-contain rounded-sm"
+                                style={{ maxWidth: '100%', maxHeight: '90vh', width: 'auto', height: 'auto' }}
                                 width={1000}
                                 height={1000}
                                 loading="lazy"
