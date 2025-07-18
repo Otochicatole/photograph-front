@@ -29,7 +29,7 @@ const Reviews = () => {
             <p className="text-[20px] italic text-[#545454] font-[LigthItalic]  mt-6 text-center">
                 “Perché ogni storia d&apos;amore merita di <br/> essere ricordata per sempre”
             </p>
-            <h2 className="text-[#545454] text-[48px] mt-10 font-[Ovtreasure] text-center">Alcune recensioni dei miei
+            <h2 className="text-[#545454] text-[48px] mt-50 font-[Ovtreasure] text-center">Alcune recensioni dei miei
                 adorabili clienti</h2>
             <p className="text-[20px] italic text-[#545454] mb-16 text-center font-[LigthItalic] "> Più di 10 anni in
                 immagini</p>
@@ -49,15 +49,15 @@ const Reviews = () => {
                                 className="flex flex-col p-4 rounded-lg bg-[#FFFDF5] border-2 border-[#CCB9AB] w-full lg:max-w-[400px] text-[#545454] gap-4"
                             >
                                 <div className="flex flex-row justify-between items-center">
-                                <h2 className="text-[26px] text-[Ovtreasure]">{title}</h2>
+                                <h2 className="text-[26px] font-[Ovtreasure]">{title}</h2>
                                 <p className={`px-3 w-fit text-sm rounded-full ${category === Category.Wedding ? 'bg-[#DAD8C1]' : category === Category.XV ? 'bg-[#E5C8BE]' : 'bg-[#BCC5CE]'}`}>{category}</p>
                                 </div>
-                                <p className="text-[16px]">{description}</p>
+                                <p className="text-[16px] font-[LigthItalic]">{description}</p>
                                 {image &&
                                     <Image className="w-full rounded-lg hidden lg:block" loading="lazy" src={image}
                                            alt={title} width={400} height={300}/>}
                                 <div className="w-full flex flex-row justify-between">
-                                    <p>{year}</p>
+                                    <p className="font-[Manchester] text-[22px] font-semibold">{year}</p>
                                     <span>{rating}</span>
                                 </div>
                             </motion.div>

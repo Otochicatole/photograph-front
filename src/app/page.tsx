@@ -48,7 +48,7 @@ export default function Home() {
                     width={996}
                     height={484}
                 />
-                <p className="text-white text-2xl font-OVTreasure text-center">
+                <p className="text-white text-2xl font-[OVTreasure] text-center">
                     La tua storia merita di essere raccontata con il sorriso giusto
                 </p>
                 <div className="flex flex-col w-full items-center p-1 mt-48">
